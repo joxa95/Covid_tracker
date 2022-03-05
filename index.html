@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="h1">
+        C<i class="fa-solid fa-virus-covid covidIcon"></i>vid - 19
+      </h1>
+      <br />
+      <br />
+      <form class="form">
+        <input
+          type="text"
+          class="country-name input"
+          placeholder="Davlat nomi ..."
+        />
+        <button class="searchBtn">Qidirish</button>
+      </form>
+      <div class="container">
+        <!-- <div class="loading">Yuklanmoqda ...</div> -->
+        <div class="errors"></div>
+        <div class="results">
+          <p class="paragraph">
+            <i class="fa-solid fa-flag"></i>
+            <strong class="country_name"></strong>
+          </p>
+          <p class="paragraph">
+            <i class="fa-solid fa-virus-covid"></i>
+            <strong>&nbsp;Bugungi kasallanishlar:</strong
+            ><span class="todayCases"></span>
+          </p>
+          <p class="paragraph">
+            <i class="fa-solid fa-skull"></i>
+            <strong>&nbsp;Bugungi o'lganlar:</strong
+            ><span class="todayDeaths"></span>
+          </p>
+          <p class="paragraph">
+            <i class="fa-solid fa-viruses"></i
+            ><strong>Jami kasallanishlar:</strong><span class="cases"></span>
+          </p>
+          <p class="paragraph">
+            <i class="fa-solid fa-virus-covid-slash"></i
+            ><strong>Jami tuzalganlar:</strong><span class="recovered"></span>
+          </p>
+          <p class="paragraph">
+            &nbsp;<i class="fa-solid fa-skull-crossbones"></i
+            ><strong>&nbsp; Jami o'lganlar:</strong><span class="deaths"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.0/axios.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
